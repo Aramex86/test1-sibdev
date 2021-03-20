@@ -120,13 +120,16 @@ const activeMenuItem = function (e) {
   menuItems.forEach((el) => el.classList.remove("active"));
   e.currentTarget.classList.add("active");
   const text = e.currentTarget.textContent;
-//   e.currentTarget.firstElementChild.setAttribute('src','./assets/icons/sidebar/active/catalog.png')
-  headerName.textContent=text
+
+  e.currentTarget.firstElementChild.style.background = 'url(../../assets/icons/sidebar/default/catalog.png)'
+  e.currentTarget.firstElementChild.style.background = 'url(../../assets/icons/sidebar/active/catalog.png)'
+  headerName.textContent=text;
+
+
 };
 
 menuItems.forEach((item) => {
   item.addEventListener("click", activeMenuItem);
 });
-console.log(menuItems);
-console.log(headerName);
 
+console.log(menuImg);

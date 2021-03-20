@@ -94,6 +94,13 @@
   color: #34abe0;
 }
 
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  background: url("../../assets/icons/sidebar/default/catalog.png");
+}
+
 .card__wrapp {
   margin-top: 40px;
   padding: 0 6rem;
