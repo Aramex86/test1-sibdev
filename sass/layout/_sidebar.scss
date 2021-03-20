@@ -1,0 +1,48 @@
+.sidebar__wrapp {
+  position: absolute;
+  width: 24rem;
+  left: 0px;
+  top: 0px;
+  bottom: -21px;
+  background: $sidebar-bg;
+}
+
+.sidebar__logo {
+  position: absolute;
+  width: 12.1rem;
+  height: 5rem;
+  left: 41px;
+  top: 41px;
+}
+
+.sidebar__list{
+    list-style: none;
+    position: absolute;
+    top: 132px;
+    width: 100%;
+    &-item{
+       display: flex;
+       height: 64px;
+       padding-left: 4rem;
+       cursor: pointer;
+       align-items: center;
+       &-img{
+           width: 24px;
+           height: 24px;
+           margin-right: 12px;
+       }
+       &-link{
+           text-decoration: none;
+           font-size:$sidebar-menu;
+           color: #000;
+       }
+      
+    }
+}
+
+.active{
+  & a{
+    color: $navigation-item-active;
+  }
+ 
+}
